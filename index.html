@@ -1,57 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>UMANG Bhaiya — CBSE Study Tracker</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UMANG Bhaiya — CBSE Study Tracker</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="app">
-        <!-- Header -->
-        <header class="header">
-            <div class="brand">
-                <span class="logo-icon">S</span>
-                <span class="brand-name">UMANG Bhaiya</span>
-            </div>
-            <div class="header-right">
-                <button id="theme-toggle-btn" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
-                <select id="profile-select" class="profile-dropdown" onchange="switchProfile(this.value)">
-                    <!-- Dynamically populated profiles -->
-                </select>
-            </div>
-        </header>
+<!-- Application container -->
+<div id="app"></div>
 
-        <!-- Main Content Area -->
-        <main id="main-content">
-            <!-- Rendered dynamically by app.js -->
-        </main>
+<!-- Templates for modals and dialogs -->
+<div id="modal-container"></div>
 
-        <!-- Bottom Navigation Bar -->
-        <nav class="bottom-nav" id="bottom-nav">
-            <button class="nav-item active" onclick="switchTab('home')">
-                <span class="nav-icon">🏠</span>
-                <span class="nav-label">Home</span>
-            </button>
-            <button class="nav-item" onclick="switchTab('chapters')">
-                <span class="nav-icon">📚</span>
-                <span class="nav-label">Chapters</span>
-            </button>
-            <button class="nav-item" onclick="switchTab('insights')">
-                <span class="nav-icon">📊</span>
-                <span class="nav-label">Insights</span>
-            </button>
-            <button class="nav-item" onclick="switchTab('settings')">
-                <span class="nav-icon">⚙️</span>
-                <span class="nav-label">Settings</span>
-            </button>
-        </nav>
-
-        <footer>
-            Built by UMANG Bhaiya[cite: 1]
-        </footer>
-    </div>
-
-    <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
